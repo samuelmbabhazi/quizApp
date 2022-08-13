@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="pageAccueil">
+      <main>
+        <section>
+          <h1>JavaScript Quiz</h1>
+          <p>
+            Évaluez vos connaissances en JavaScript en répondant aux questions
+            que nous avons spécialement sélectionnées pour vous. C'est fun et
+            c'est gratuit.
+          </p>
+        </section>
+        <form action="" class="forme">
+          <div id="form">
+            <span>Nom</span>
+            <input
+              type="text"
+              class="name"
+              placeholder="Entrer votre nom"
+              minlength="3"
+            />
+            <small class="errorr" id="erreur"></small>
+            <span>Email</span>
+            <input
+              type="email"
+              class="email"
+              pattern="[^@]+@[^@]+\.[a-zA-Z]{2,}"
+              placeholder="Address Email"
+            />
+            <small class="errorr" id="erreur2"></small>
+          </div>
+          <input type="submit" value="Commencer" />
+        </form>
+      </main>
+    </div>
+
+    <!-- page Question -->
+    <div class="pageQuest">
+      <main class="middle">
+        <section id="section2">
+          <h2 id="question">
+            Sous quelle format est enregistre un fichier JavaScript
+          </h2>
+
+          <div id="prog">
+            <p id="counter">
+              <small> Question <small id="questioncounter"></small></small>
+              <small id="textCount"></small>
+            </p>
+          </div>
+          <div id="barprogress">
+            <progress id="progressBar" max="60" value="60"></progress>
+          </div>
+          <div class="choix">
+            <input type="radio" id="reponse1" name="reponse" value="1" /><label
+              class="choix-text"
+              for="reponse1"
+              data-number="1"
+              >.jt</label
+            >
+          </div>
+          <div class="choix">
+            <input type="radio" id="reponse2" name="reponse" value="2" /><label
+              class="choix-text"
+              for="reponse2"
+              data-number="2"
+              >.jss</label
+            >
+          </div>
+          <div class="choix">
+            <input type="radio" id="reponse3" name="reponse" value="3" /><label
+              class="choix-text"
+              for="reponse3"
+              data-number="3"
+              >.jso</label
+            >
+          </div>
+          <div class="choix">
+            <input type="radio" id="reponse4" name="reponse" value="4" /><label
+              class="choix-text"
+              for="reponse4"
+              data-number="4"
+              >.javaS</label
+            >
+          </div>
+          <div class="button">
+            <button class="quitter" onclick="quit()">Quitter</button>
+            <button type="button" class="suivant" disabled>Suivant</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <!-- -------------------------------------------------------- -->
+
+    <!-- page end -->
+
+    <div class="pageEnd">
+      <main class="finish">
+        <div id="ideT">
+          <div id="identite"></div>
+          <br />
+          <div id="emailsid"></div>
+        </div>
+        <div id="image"></div>
+        <div id="score"></div>
+        <form action="../index.html">
+          <button id="accueil">ACCUEIL</button>
+        </form>
+      </main>
+    </div>
+
+    <!-- --------------------------------------------------- -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
